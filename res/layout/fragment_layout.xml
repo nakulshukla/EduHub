@@ -1,0 +1,52 @@
+<com.example.eduhub.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/blackboard" >
+    <!--  Time Table Button Button -->
+    <Button
+        android:id="@+id/btn_sch"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_schedule"
+        android:text="@string/TT" />
+     
+    <!--  Calendar Button Button -->
+    <Button
+        android:id="@+id/btn_cal"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_calendar"
+        android:text="@string/Cal" />
+     
+    <!--  Resources Button -->
+    <Button
+        android:id="@+id/btn_res"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_books"
+        android:text="@string/re" />
+     
+    <!--  Notification Button -->
+    <Button
+        android:id="@+id/btn_not"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_notification"
+        android:text="@string/notf" />
+   
+  
+    <!--  attendance Button--> 
+    
+    <!--  <Button
+        android:id="@+id/btn_att"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_check"
+        android:text="@string/att" /> -->
+        
+	<!--  extras Button-->
+   <!--  
+    <Button
+        android:id="@+id/btn_photos"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_check"
+        android:text="@string/att" /> --> 
+ 
+</com.example.eduhub.DashboardLayout>

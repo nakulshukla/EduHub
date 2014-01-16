@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eduhub"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.eduhub.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.eduhub.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.example.eduhub.DashBoardActivity"
+            android:label="@string/title_activity_dash_board" >
+        </activity>
+        <activity
+            android:name="com.example.eduhub.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.example.eduhub.ManActivity"
+            android:label="@string/title_activity_man" >
+        </activity>
+        <activity
+            android:name="com.example.eduhub.SchedulerActivity"
+            android:label="@string/title_activity_scheduler" >
+        </activity>
+        <activity
+            android:name="com.example.eduhub.CalendarActivity"
+            android:label="@string/title_activity_calendar" >
+        </activity>
+        <activity
+            android:name="com.example.eduhub.ResourceActivity"
+            android:label="@string/title_activity_resource" >
+        </activity>
+        <activity
+            android:name="com.example.eduhub.NotificationActivity"
+            android:label="@string/title_activity_notification" >
+        </activity>
+        <activity
+            android:name="com.example.eduhub.ExistingTT"
+            android:label="@string/title_activity_existing_tt" >
+        </activity>
+        <activity
+            android:name="com.example.eduhub.NewTT"
+            android:label="@string/title_activity_new_tt" >
+        </activity>
+        <activity
+            android:name="com.example.eduhub.CreateTimeTable"
+            android:label="@string/title_activity_create_time_table" >
+        </activity>
+    </application>
+
+</manifest>

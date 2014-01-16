@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackboard"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SchedulerActivity" >
+
+    <Button
+        android:id="@+id/btn_exs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:textSize="20sp"
+        android:text="@string/exs_tt"
+        android:textColor="#C0C0C0"
+       />
+
+    <Button
+        android:id="@+id/btn_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_exs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:textSize="20sp"
+        android:textColor="#C0C0C0"
+        android:text="@string/new_tt" />
+    
+</RelativeLayout>
