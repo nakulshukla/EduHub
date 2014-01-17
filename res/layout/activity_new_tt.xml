@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".NewTT" >
 
-    <!--   <TextView
+      <TextView
          android:id="@+id/tnday"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
@@ -19,50 +19,51 @@
          android:text="@string/n_days"
          android:textColor="#C0C0C0"
          android:textSize="25sp" />
-      -->
-
-   <!--    <EditText
-         android:id="@+id/nday"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignLeft="@+id/endtime"
-         android:layout_below="@+id/endtime"
-         android:layout_marginTop="20dp"
-         android:ems="10"
-         android:inputType="number" />-->
-
-     <EditText
-         android:id="@+id/nlec"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignParentRight="true"
-         android:layout_below="@+id/tnlec"
-         android:layout_marginRight="33dp"
-         android:layout_marginTop="27dp"
-         android:ems="10"
-         android:inputType="number" />
-
-     <TextView
-         android:id="@+id/tnlec"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignParentTop="true"
-         android:layout_alignRight="@+id/nlec"
-         android:layout_marginTop="122dp"
-         android:text="@string/n_lec"
-         android:textColor="#C0C0C0"
-         android:textSize="25sp" />
 
      <Button
          android:id="@+id/button1"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_alignParentBottom="true"
-         android:layout_alignParentRight="true"
-         android:layout_marginBottom="68dp"
-         android:layout_marginRight="28dp"
+         android:layout_alignRight="@+id/tnday"
+         android:layout_marginBottom="50dp"
+         android:onClick="createTT"
          android:text="@string/cr"
+         android:textColor="#C0C0C0" />
+
+     <TextView
+         android:id="@+id/tnlec"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/nlec"
+         android:layout_centerVertical="true"
+         android:text="@string/n_lec"
          android:textColor="#C0C0C0"
-         android:onClick="createTT"/>
+         android:textSize="25sp" />
+
+     <EditText
+         android:id="@+id/nlec"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/tnlec"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dp"
+         android:ems="10"
+         android:inputType="number" />
+
+         
+     <EditText
+         android:id="@+id/nday"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/tnday"
+         android:layout_below="@+id/tnday"
+         android:layout_marginTop="20dp"
+         android:ems="10"
+         android:inputType="number"
+         android:maxWidth="5dp" >
+         <requestFocus />
+     </EditText>
+         
     
 </RelativeLayout>

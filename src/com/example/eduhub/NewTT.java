@@ -17,6 +17,7 @@ public class NewTT extends Activity {
 	int Lec;
 	int Days;
 	public final static String EXTRA_MESSAGE = "com.example.eduhub.MESSAGE";
+	public final static String EXTRA_MESSAGE2 = "com.example.eduhub.MESSAGE";
 	Context c= this;
 	
 	@Override
@@ -51,8 +52,11 @@ public class NewTT extends Activity {
 		    	    {
 		    	    	Intent intent = new Intent( c , CreateTimeTable.class);
 		    	        EditText editText = (EditText) findViewById(R.id.nlec);
+		    	        EditText editText2 = (EditText) findViewById(R.id.nday);
 		    	        String message = editText.getText().toString();
+		    	        String message2 = editText2.getText().toString();
 		    	        intent.putExtra(EXTRA_MESSAGE, message);
+		    	        intent.putExtra(EXTRA_MESSAGE2, message2);
 		    	        startActivity(intent);
 			        }
 		         }
