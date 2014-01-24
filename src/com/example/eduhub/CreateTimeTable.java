@@ -34,16 +34,12 @@ public class CreateTimeTable extends Activity {
 	    sv.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.MATCH_PARENT));
 	    TableLayout ll=new TableLayout(this);
 	    HorizontalScrollView hsv = new HorizontalScrollView(this);
-	    
+	    int t=0;
 	    if(day==1) 
-	       {for(int i=1;i<=lec;i++) 
-		     {
-		        TableRow trow=new TableRow(this);
-
-		        for(j=1;j<=1;j++) {
-		        	if(i==1&&j==1)
-		        	{
-		        		TextView tv1=new TextView(this);
+	       {for(int i=0;i<=lec;i++) 
+		     {  TableRow trow=new TableRow(this);
+                 if(i==0)
+		        	{   TextView tv1=new TextView(this);
 		                TextView tv2=new TextView(this);
 		                tv1.setText("TIME");
 		                tv1.setId(101);
@@ -53,30 +49,35 @@ public class CreateTimeTable extends Activity {
 		                tv2.setId(102);
 		                tv2.setBackgroundResource(R.drawable.cell_shape);
 		                trow.addView(tv2);
-		                }
-		            EditText e1=new EditText(this);
-		            if(j==1)
-		            	e1.setInputType(InputType.TYPE_DATETIME_VARIATION_TIME);
-		            e1.setId(i+j);
-		            e1.setBackgroundResource(R.drawable.cell_shape);
-		            trow.addView(e1);                
-		        }
+		             }
+                 else
+		            {EditText e1=new EditText(this);
+		              e1.setInputType(InputType.TYPE_DATETIME_VARIATION_TIME);
+		              e1.setId(t);
+		              t++;
+		              e1.setBackgroundResource(R.drawable.cell_shape);
+		              trow.addView(e1);
+		              EditText e2=new EditText(this);
+		              e2.setId(t);
+		              t++;
+		              e2.setBackgroundResource(R.drawable.cell_shape);
+		              trow.addView(e2);		              
+		           }
+		        
 		        ll.addView(trow);
 		        View v = new View(this);
-		        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT );
+		        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, 5);
 		        v.setLayoutParams(params);
-		        v.setBackgroundResource(R.drawable.blackboard);
+		        v.setBackgroundColor(getResources().getColor(android.R.color.transparent));
 		        ll.addView(v);
 		    }
 	       }
 	    
 	    else if(day==2) 
-	       {for(int i=1;i<=lec;i++) 
+	       {for(int i=0;i<=lec;i++) 
 		     {
 		        TableRow trow=new TableRow(this);
-
-		        for(j=1;j<=2;j++) {
-		        	if(i==1&&j==1)
+				 if(i==0)
 		        	{
 		        		TextView tv1=new TextView(this);
 		                TextView tv2=new TextView(this);
@@ -93,15 +94,24 @@ public class CreateTimeTable extends Activity {
 		                tv3.setId(103);
 		                tv3.setBackgroundResource(R.drawable.cell_shape);
 		                trow.addView(tv3);
-		                }
-		            EditText e1=new EditText(this);
-		           //e1.setText("Element :"+ i + "" + j);
-		            if(j==1)
-		            	e1.setInputType(InputType.TYPE_DATETIME_VARIATION_TIME);
-		            e1.setId(i+j);
-		            e1.setBackgroundResource(R.drawable.cell_shape);
-		            trow.addView(e1);                
-		        }
+		             }
+				 else
+		            {EditText e1=new EditText(this);
+		              e1.setId(t);
+		              t++;
+		              e1.setBackgroundResource(R.drawable.cell_shape);
+		              trow.addView(e1);
+		              EditText e2=new EditText(this);
+		              e2.setId(t);
+		              t++;
+		              e2.setBackgroundResource(R.drawable.cell_shape);
+		              trow.addView(e2);
+		              EditText e3=new EditText(this);
+		              e3.setId(t);
+		              t++;
+		              e3.setBackgroundResource(R.drawable.cell_shape);
+		              trow.addView(e3);
+		            }
 		        ll.addView(trow);
 		        View v = new View(this);
 		        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, 5);
@@ -111,13 +121,13 @@ public class CreateTimeTable extends Activity {
 		    }
 	       }	
 
+	    
 	    else if(day==3) 
-	       {for(int i=1;i<=lec;i++) 
+	       {for(int i=0;i<=lec;i++) 
 		     {
 		        TableRow trow=new TableRow(this);
 
-		        for(j=1;j<=3;j++) {
-		        	if(i==1&&j==1)
+		        	if(i==0)
 		        	{
 		        		TextView tv1=new TextView(this);
 		                TextView tv2=new TextView(this);
@@ -140,14 +150,29 @@ public class CreateTimeTable extends Activity {
 		                tv4.setBackgroundResource(R.drawable.cell_shape);
 		                trow.addView(tv4);
 		                }
-		            EditText e1=new EditText(this);
-		           //e1.setText("Element :"+ i + "" + j);
-		            if(j==1)
-		            	e1.setInputType(InputType.TYPE_DATETIME_VARIATION_TIME);
-		            e1.setId(i+j);
-		            e1.setBackgroundResource(R.drawable.cell_shape);
-		            trow.addView(e1);                
-		        }
+		        	else
+		        	{
+		        		EditText e1=new EditText(this);
+			              e1.setId(t);
+			              t++;
+			              e1.setBackgroundResource(R.drawable.cell_shape);
+			              trow.addView(e1);
+			              EditText e2=new EditText(this);
+			              e2.setId(t);
+			              t++;
+			              e2.setBackgroundResource(R.drawable.cell_shape);
+			              trow.addView(e2);
+			              EditText e3=new EditText(this);
+			              e3.setId(t);
+			              t++;
+			              e3.setBackgroundResource(R.drawable.cell_shape);
+			              trow.addView(e3);
+			              EditText e4=new EditText(this);
+			              e4.setId(t);
+			              t++;
+			              e4.setBackgroundResource(R.drawable.cell_shape);
+			              trow.addView(e4);    
+		        	}
 		        ll.addView(trow);
 		        View v = new View(this);
 		        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, 5);
@@ -158,13 +183,12 @@ public class CreateTimeTable extends Activity {
 	       }
 	    
 	    else if(day==4) 
-	       {for(int i=1;i<=lec;i++) 
+	       {for(int i=0;i<=lec;i++) 
 		     {
 		        TableRow trow=new TableRow(this);
 
-		        for(j=1;j<=4;j++) {
-		        	if(i==1&&j==1)
-		        	{
+		        if(i==0)
+		        	 {
 		        		TextView tv1=new TextView(this);
 		                TextView tv2=new TextView(this);
 		                TextView tv3=new TextView(this);
@@ -191,13 +215,32 @@ public class CreateTimeTable extends Activity {
 		                tv5.setBackgroundResource(R.drawable.cell_shape);
 		                trow.addView(tv5);
 		                }
-		            EditText e1=new EditText(this);
-		           //e1.setText("Element :"+ i + "" + j);
-		            if(j==1)
-		            	e1.setInputType(InputType.TYPE_DATETIME_VARIATION_TIME);
-		            e1.setId(i+j);
-		            e1.setBackgroundResource(R.drawable.cell_shape);
-		            trow.addView(e1);                
+		        else
+		            { EditText e1=new EditText(this);
+		              e1.setId(t);
+		              t++;
+		              e1.setBackgroundResource(R.drawable.cell_shape);
+		              trow.addView(e1);
+		              EditText e2=new EditText(this);
+		              e2.setId(t);
+		              t++;
+		              e2.setBackgroundResource(R.drawable.cell_shape);
+		              trow.addView(e2);
+		              EditText e3=new EditText(this);
+		              e3.setId(t);
+		              t++;
+		              e3.setBackgroundResource(R.drawable.cell_shape);
+		              trow.addView(e3);
+		              EditText e4=new EditText(this);
+		              e4.setId(t);
+		              t++;
+		              e4.setBackgroundResource(R.drawable.cell_shape);
+		              trow.addView(e4);
+		        	  EditText e5=new EditText(this);
+		              e5.setId(t);
+		              t++;
+		              e5.setBackgroundResource(R.drawable.cell_shape);
+		              trow.addView(e5);                
 		        }
 		        ll.addView(trow);
 		        View v = new View(this);
@@ -209,12 +252,10 @@ public class CreateTimeTable extends Activity {
 	       }
 	    
 	    else if(day==5) 
-	       {for(int i=1;i<=lec;i++) 
+	       {for(int i=0;i<=lec;i++) 
 		     {
 		        TableRow trow=new TableRow(this);
-
-		        for(j=1;j<=5;j++) {
-		        	if(i==1&&j==1)
+		        	if(i==0)
 		        	{
 		        		TextView tv1=new TextView(this);
 		                TextView tv2=new TextView(this);
@@ -246,15 +287,40 @@ public class CreateTimeTable extends Activity {
 		                tv6.setId(102);
 		                tv6.setBackgroundResource(R.drawable.cell_shape);
 		                trow.addView(tv6);
-		                }
-		            EditText e1=new EditText(this);
-		           //e1.setText("Element :"+ i + "" + j);
-		            if(j==1)
-		            	e1.setInputType(InputType.TYPE_DATETIME_VARIATION_TIME);
-		            e1.setId(i+j);
-		            e1.setBackgroundResource(R.drawable.cell_shape);
-		            trow.addView(e1);                
-		        }
+		              }
+		        else
+		         { EditText e1=new EditText(this);
+	              e1.setId(t);
+	              t++;
+	              e1.setBackgroundResource(R.drawable.cell_shape);
+	              trow.addView(e1);
+	              EditText e2=new EditText(this);
+	              e2.setId(t);
+	              t++;
+	              e2.setBackgroundResource(R.drawable.cell_shape);
+	              trow.addView(e2);
+	              EditText e3=new EditText(this);
+	              e3.setId(t);
+	              t++;
+	              e3.setBackgroundResource(R.drawable.cell_shape);
+	              trow.addView(e3);
+	              EditText e4=new EditText(this);
+	              e4.setId(t);
+	              t++;
+	              e4.setBackgroundResource(R.drawable.cell_shape);
+	              trow.addView(e4);
+	        	  EditText e5=new EditText(this);
+	              e5.setId(t);
+	              t++;
+	              e5.setBackgroundResource(R.drawable.cell_shape);
+	              trow.addView(e5);
+	              EditText e6=new EditText(this);
+	              e6.setId(t);
+	              t++;
+	              e6.setBackgroundResource(R.drawable.cell_shape);
+	              trow.addView(e6);
+	             
+		         }
 		        ll.addView(trow);
 		        View v = new View(this);
 		        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, 5);
@@ -265,12 +331,11 @@ public class CreateTimeTable extends Activity {
 	       }
 	    
 	    else if(day==6) 
-       {for(int i=1;i<=lec;i++) 
+       {for(int i=0;i<=lec;i++) 
 	     {
 	        TableRow trow=new TableRow(this);
 
-	        for(j=1;j<=6;j++) {
-	        	if(i==1&&j==1)
+	        	if(i==0)
 	        	{
 	        		TextView tv1=new TextView(this);
 	                TextView tv2=new TextView(this);
@@ -308,14 +373,44 @@ public class CreateTimeTable extends Activity {
 	                tv7.setBackgroundResource(R.drawable.cell_shape);
 	                trow.addView(tv7);
 	            }
-	            EditText e1=new EditText(this);
-	           //e1.setText("Element :"+ i + "" + j);
-	            if(j==1)
-	            	e1.setInputType(InputType.TYPE_DATETIME_VARIATION_TIME);
-	            e1.setId(i+j);
-	            e1.setBackgroundResource(R.drawable.cell_shape);
-	            trow.addView(e1);                
-	        }
+	       else	
+	       {  EditText e1=new EditText(this);
+              e1.setId(t);
+              t++;
+              e1.setBackgroundResource(R.drawable.cell_shape);
+              trow.addView(e1);
+              EditText e2=new EditText(this);
+              e2.setId(t);
+              t++;
+              e2.setBackgroundResource(R.drawable.cell_shape);
+              trow.addView(e2);
+              EditText e3=new EditText(this);
+              e3.setId(t);
+              t++;
+              e3.setBackgroundResource(R.drawable.cell_shape);
+              trow.addView(e3);
+              EditText e4=new EditText(this);
+              e4.setId(t);
+              t++;
+              e4.setBackgroundResource(R.drawable.cell_shape);
+              trow.addView(e4);
+              EditText e5=new EditText(this);
+              e5.setId(t);
+              t++;
+              e5.setBackgroundResource(R.drawable.cell_shape);
+              trow.addView(e5);
+              EditText e6=new EditText(this);
+              e6.setId(t);
+              t++;
+              e6.setBackgroundResource(R.drawable.cell_shape);
+              trow.addView(e6);
+              EditText e7=new EditText(this);
+              e7.setId(t);
+              t++;
+              e7.setBackgroundResource(R.drawable.cell_shape);
+              trow.addView(e7);
+              
+	       }
 	        ll.addView(trow);
 	        View v = new View(this);
 	        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, 5);

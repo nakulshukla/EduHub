@@ -29,10 +29,10 @@ public class NewTT extends Activity {
 		btn_cr.setOnClickListener(new View.OnClickListener() 
 		{ public void onClick(View view)
 		      {     EditText et1 = (EditText) findViewById(R.id.nlec);
-					//EditText et2 = (EditText) findViewById(R.id.nday);
+					EditText et2 = (EditText) findViewById(R.id.nday);
 					String text1 = et1.getText().toString();
-					//String text2 = et2.getText().toString();
-		    	    if (text1 == null || text1.equals("")/*||text2 == null || text2.equals("")*/) 
+					String text2 = et2.getText().toString();
+		    	    if (text1 == null || text1.equals("")||text2 == null || text2.equals("")) 
 		    	    {
 		    	    	AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(context);
 		                dlgAlert.setMessage("Numbers not entered");
