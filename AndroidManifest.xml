@@ -24,9 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-           
-        
-        
         <activity
             android:name="com.example.eduhub.MainActivity"
             android:label="@string/title_activity_main" >
@@ -71,19 +68,25 @@
             android:name="com.example.eduhub.CreateTimeTable"
             android:label="@string/title_activity_create_time_table" >
         </activity>
-        
         <activity
- 	 		android:name="com.dropbox.client2.android.AuthActivity"
- 			 android:launchMode="singleTask"
- 			 android:configChanges="orientation|keyboard">
-  		<intent-filter>
-   			 <!-- Change this to be db- followed by your app key -->
-    		<data android:scheme="db-zravzk3rpvdy36v" />
-   		 <action android:name="android.intent.action.VIEW" />
-   			 <category android:name="android.intent.category.BROWSABLE"/>
-   		 <category android:name="android.intent.category.DEFAULT" />
-  		</intent-filter>
-		</activity>
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-zravzk3rpvdy36v" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.eduhub.List_files"
+            android:label="@string/title_activity_list_files" >
+        </activity>
     </application>
 
 </manifest>

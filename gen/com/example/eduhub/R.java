@@ -72,15 +72,16 @@ public final class R {
         public static final int activity_calendar=0x7f030001;
         public static final int activity_create_time_table=0x7f030002;
         public static final int activity_existing_tt=0x7f030003;
-        public static final int activity_main=0x7f030004;
-        public static final int activity_new_tt=0x7f030005;
-        public static final int activity_notification=0x7f030006;
-        public static final int activity_resource=0x7f030007;
-        public static final int activity_scheduler=0x7f030008;
-        public static final int activity_splash=0x7f030009;
-        public static final int dashboard_layout=0x7f03000a;
-        public static final int fragment_layout=0x7f03000b;
-        public static final int header=0x7f03000c;
+        public static final int activity_list_files=0x7f030004;
+        public static final int activity_main=0x7f030005;
+        public static final int activity_new_tt=0x7f030006;
+        public static final int activity_notification=0x7f030007;
+        public static final int activity_resource=0x7f030008;
+        public static final int activity_scheduler=0x7f030009;
+        public static final int activity_splash=0x7f03000a;
+        public static final int dashboard_layout=0x7f03000b;
+        public static final int fragment_layout=0x7f03000c;
+        public static final int header=0x7f03000d;
     }
     public static final class menu {
         public static final int calendar=0x7f080000;
@@ -88,14 +89,15 @@ public final class R {
         public static final int dash_board=0x7f080002;
         public static final int existing_tt=0x7f080003;
         public static final int home=0x7f080004;
-        public static final int main=0x7f080005;
-        public static final int man=0x7f080006;
-        public static final int new_tt=0x7f080007;
-        public static final int notification=0x7f080008;
-        public static final int resource=0x7f080009;
-        public static final int schedule=0x7f08000a;
-        public static final int scheduler=0x7f08000b;
-        public static final int splash=0x7f08000c;
+        public static final int list_files=0x7f080005;
+        public static final int main=0x7f080006;
+        public static final int man=0x7f080007;
+        public static final int new_tt=0x7f080008;
+        public static final int notification=0x7f080009;
+        public static final int resource=0x7f08000a;
+        public static final int schedule=0x7f08000b;
+        public static final int scheduler=0x7f08000c;
+        public static final int splash=0x7f08000d;
     }
     public static final class string {
         public static final int Cal=0x7f050007;
@@ -120,6 +122,7 @@ public final class R {
         public static final int title_activity_dash_board=0x7f050004;
         public static final int title_activity_existing_tt=0x7f050013;
         public static final int title_activity_home=0x7f050005;
+        public static final int title_activity_list_files=0x7f05001f;
         public static final int title_activity_main=0x7f050003;
         public static final int title_activity_man=0x7f05000b;
         public static final int title_activity_new_tt=0x7f050014;

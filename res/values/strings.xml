@@ -32,5 +32,6 @@
     <string name="w">WEDNESDAY</string>
     <string name="th">THURSDAY</string>
     <string name="f">FRIDAY</string>
+    <string name="title_activity_list_files">List_files</string>
 
 </resources>

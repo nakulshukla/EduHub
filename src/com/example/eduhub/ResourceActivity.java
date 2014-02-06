@@ -28,7 +28,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 //import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
+//import android.widget.ScrollView;
 import android.widget.Toast;
 
 public class ResourceActivity extends Activity {
@@ -49,10 +49,7 @@ public class ResourceActivity extends Activity {
 
     //private ImageView mImage;
     Intent intent;
-    //private final String PHOTO_DIR = "/Photos/";
-
-   // final static private int NEW_PICTURE = 1;
-   // private String mCameraFileName;
+   
     Entry existingEntry;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -153,11 +150,11 @@ public class ResourceActivity extends Activity {
 	    	mLoggedIn = loggedIn;
 	    	if (loggedIn) {
 	    		mSubmit.setText("Unlink from Dropbox");
-	            //mDisplay.setVisibility(View.VISIBLE);
+	            mDisplay.setVisibility(View.VISIBLE);
 	            mPhoto.setVisibility(View.VISIBLE);
 	    	} else {
 	    		mSubmit.setText("Link with Dropbox");
-	           // mDisplay.setVisibility(View.GONE);
+	           mDisplay.setVisibility(View.GONE);
 	            mPhoto.setVisibility(View.GONE);
 	           // mImage.setImageDrawable(null);
 	    	}
